@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Content from "$lib/content.svelte";
+</script>
+
+<Content>
+  <h1>Jana's Gallery</h1>
+  Some sections under construction...
+</Content>
