@@ -6,17 +6,21 @@
 </script>
 
 <a
-  class="px-4 border-rounded"
+  class="px-4"
   {href}
-  class:bg-slate-200={$page.url.pathname === href && themeFacade().theme === 'light'}
-  class:bg-slate-900={$page.url.pathname === href && themeFacade().theme === 'dark'}
+  class:active={$page.url.pathname.includes(href)}
+  class:bg-slate-200={$page.url.pathname.includes(href) && themeFacade().theme === 'light'}
+  class:bg-slate-900={$page.url.pathname.includes(href) && themeFacade().theme === 'dark'}
 >
   {label}
 </a>
 
 <style>
-  .border-rounded {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  a {
+    white-space: nowrap;
+  }
+
+  .active {
+    font-weight: bold;
   }
 </style>

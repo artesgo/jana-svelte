@@ -1,5 +1,5 @@
 <h1>My Canvas is the Street</h1>
-<div class="flex flex-row gap-4 items-start">
+<div class="flex flex-col md:flex-row gap-4 items-start">
   <img src="/PaintSpill.jpg" alt="My Canvas is the Street" width="259px" height="236px" />
 	<div class="poetry">
 		<p>I feel the pavement under my feet</p>

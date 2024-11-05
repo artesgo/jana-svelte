@@ -1,6 +1,6 @@
 <h1>Projects</h1>
-<div class="flex flex-row gap-2 mb-4">
-	<img src="/unity.png" alt="" width="228" height="293" />
+<div class="flex flex-col md:flex-row gap-2 mb-4">
+	<img class="mx-auto" src="/unity.png" alt="" width="228" height="293" />
 	<div>
 		[PREVIOUS CONTENT] Jana Vizdal In Unity We Soar ARCH OF PEACE COLLABORATIVE PROJECTS MISSION:
 		FINANCIAL SUPPORT for schools in need/ portion of proceeds from these projects will be donated

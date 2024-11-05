@@ -1,7 +1,7 @@
 <h1>Feet of the Homeless</h1>
-<div class="flex gap-4">
-  <div>
-    <img class="mx-auto" src="/feet-of-the-homeless.jpg" alt="feet of the homeless" width="259px" height="194px" />
+<div class="flex flex-col md:flex-row gap-4">
+  <div class="mx-auto">
+    <img src="/feet-of-the-homeless.jpg" alt="feet of the homeless" width="259px" height="194px" />
     <audio style="width: 259px" src="/The-Pursuit-Of-Happyness-Soundtrack-Homeless-14_16.mp3" controls autoplay></audio>
   </div>
   <div class="poetry">

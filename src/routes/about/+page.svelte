@@ -1,6 +1,6 @@
 <div>
 	<h1 class="text-xl">About Me</h1>
-	<div class="flex items-start gap-2">
+	<div class="flex flex-col md:flex-row items-start gap-2">
 		<img src="/jana.jpg" alt="" width="364px" height="242px" />
 		<div>
 			<p>

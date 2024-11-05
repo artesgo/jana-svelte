@@ -1,7 +1,7 @@
 <h1>Debutant</h1>
-<div class="flex flex-row gap-4">
-  <div>
-    <img class="mx-auto" src="/debutant.jpg" alt="debutant" width="259px" height="194px" />
+<div class="flex flex-col md:flex-row gap-4">
+  <div class="mx-auto">
+    <img src="/debutant.jpg" alt="debutant" width="259px" height="194px" />
     <audio style="width: 259px" src="/Moonlight-SonataPiano-Sonata-No.-14-in-C-sharp-minor-_Quasi-una-fantasia_.mp3" controls autoplay></audio>
   </div>
   
