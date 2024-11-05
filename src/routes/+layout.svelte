@@ -1,9 +1,17 @@
 <script lang="ts">
 	import '../app.css';
+	import { browser } from '$app/environment';
 	import { themeFacade } from '$lib';
 	import ActiveLink from './activeLink.svelte';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+
+	onMount(() => {
+		if (browser) {
+			themeFacade().setTheme(window.localStorage.getItem('theme') || 'dark');
+		}
+	});
 </script>
 
 <div
@@ -18,7 +26,7 @@
 			</div>
 		</section>
 		<div class="mx-auto sm:w-full md:w-[700px] lg:w-[900px]">
-			<nav class="items-center sm:px-2 md:flex md:justify-between">
+			<nav class="items-center pb-0 sm:px-2 md:flex md:justify-between md:pb-4">
 				<img class="mx-auto md:mx-0" src="/Logo.png" alt="logo" width="299px" height="83px" />
 				<ul class="flex justify-center gap-2">
 					<li>
@@ -35,8 +43,8 @@
 					</li>
 				</ul>
 			</nav>
-			<main class="flex flex-col sm:flex-row md:items-start items-center">
-				<section class="flex sm:flex-col flex-row gap-2 pt-12">
+			<main class="flex flex-col sm:flex-row md:items-start">
+				<section class="flex flex-row gap-2 pt-4 sm:flex-col md:pt-12">
 					<!-- side nav -->
 					<ActiveLink href="/design" label="Design" />
 					<ActiveLink href="/sale" label="For Sale" />
@@ -51,7 +59,7 @@
 		</div>
 	</div>
 	<footer
-		class="bg-white text-center text-black transition-all duration-1000 mt-8 dark:bg-black dark:text-white"
+		class="mt-8 bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
 	>
 		<p>Site by Artesgo © 2024. All rights reserved.</p>
 		<img src="/aurora-reflected.png" role="presentation" alt="reflected" class="aurora" />
