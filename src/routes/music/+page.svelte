@@ -1,4 +1,4 @@
-<h1>music</h1>
+<h1>Music</h1>
 <div>
   Show list of music previews
   TODO: music player
