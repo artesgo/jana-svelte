@@ -73,7 +73,7 @@
 									<div class="sr-only">Close</div>
 								</button>
 								<div
-									class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md dark:bg-slate-900 bg-slate-200 shadow-lg ring-2 focus:outline-none"
+									class="absolute right-0 z-10 mt-2 w-36 origin-top-right rounded-md dark:bg-slate-900 bg-slate-200 shadow-lg ring-2 focus:outline-none"
 									role="menu"
 									aria-orientation="vertical"
 									aria-labelledby="menu-button"
