@@ -6,8 +6,8 @@
 </script>
 
 <a
-  class="px-4"
   {href}
+  class="block px-4 py-2 text-sm"
   class:active={$page.url.pathname.includes(href)}
   class:bg-slate-200={$page.url.pathname.includes(href) && themeFacade().theme === 'light'}
   class:bg-slate-900={$page.url.pathname.includes(href) && themeFacade().theme === 'dark'}
