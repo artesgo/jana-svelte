@@ -9,7 +9,7 @@
 
 <style>
   img {
-    width: 1086px;
-    height: 386px;
+    width: 100%;
+    height: 100%;
   }
 </style>
