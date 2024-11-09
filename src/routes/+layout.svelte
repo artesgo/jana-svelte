@@ -26,14 +26,14 @@
 >
 	<div>
 		<section class="relative">
-			<img src="/aurora-sky.png" role="presentation" alt="aurora" />
+			<img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/aurora-sky.png" role="presentation" alt="aurora" />
 			<div class="absolute bottom-0 right-0 p-4 text-xs text-[#FC0] sm:p-6 sm:text-sm">
 				"In creative flow I truly am with the UNIVERSE" Jana Vizdal
 			</div>
 		</section>
 		<div class="mx-auto sm:w-full md:w-[700px] lg:w-[900px]">
 			<nav class="items-center sm:px-2 pb-2 md:flex md:justify-between md:pb-4">
-				<img class="mx-auto md:mx-0" src="/Logo.png" alt="logo" width="299px" height="83px" />
+				<img class="mx-auto md:mx-0" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/Logo.png" alt="logo" width="299px" height="83px" />
 				<ul class="flex justify-center gap-2 items-center">
 					<li>
 						<a href="/">Home</a>
@@ -73,7 +73,7 @@
 									<div class="sr-only">Close</div>
 								</button>
 								<div
-									class="absolute right-0 z-10 mt-2 w-36 origin-top-right rounded-md dark:bg-slate-900 bg-slate-200 shadow-lg ring-2 focus:outline-none"
+									class="absolute right-0 left-0 fit-content z-10 mt-2 text-center origin-top-right rounded-md dark:bg-slate-900 bg-slate-200 shadow-lg ring-2 focus:outline-none"
 									role="menu"
 									aria-orientation="vertical"
 									aria-labelledby="menu-button"
@@ -108,6 +108,6 @@
 		class="mt-8 bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
 	>
 		<p>Site by Artesgo © 2024. All rights reserved.</p>
-		<img src="/aurora-reflected.png" role="presentation" alt="reflected" class="aurora" />
+		<img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/aurora-reflected.png" role="presentation" alt="reflected" class="aurora" />
 	</footer>
 </div>

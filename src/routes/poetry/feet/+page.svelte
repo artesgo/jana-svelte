@@ -1,8 +1,8 @@
 <h1>Feet of the Homeless</h1>
 <div class="flex flex-col md:flex-row gap-4">
   <div class="mx-auto">
-    <img src="/feet-of-the-homeless.jpg" alt="feet of the homeless" width="259px" height="194px" />
-    <audio style="width: 259px" src="/The-Pursuit-Of-Happyness-Soundtrack-Homeless-14_16.mp3" controls autoplay></audio>
+    <img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/feet-of-the-homeless.jpg" alt="feet of the homeless" width="259px" height="194px" />
+    <audio style="width: 259px" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/The-Pursuit-Of-Happyness-Soundtrack-Homeless-14_16.mp3" controls autoplay></audio>
   </div>
   <div class="poetry">
     <p>I don't see it</p>

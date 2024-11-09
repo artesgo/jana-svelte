@@ -1,6 +1,6 @@
 <h1>My Canvas is the Street</h1>
 <div class="flex flex-col md:flex-row gap-4 items-start">
-  <img src="/PaintSpill.jpg" alt="My Canvas is the Street" width="259px" height="236px" />
+  <img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/PaintSpill.jpg" alt="My Canvas is the Street" width="259px" height="236px" />
 	<div class="poetry">
 		<p>I feel the pavement under my feet</p>
 		<p>I feel the heat on my head</p>
