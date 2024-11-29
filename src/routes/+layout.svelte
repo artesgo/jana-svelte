@@ -5,6 +5,7 @@
 	import Link from './link.svelte';
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
+	import { assetBaseUrl } from '$lib/image';
 
 	let { children } = $props();
 	let showNavigation = $state(false);
@@ -26,14 +27,14 @@
 >
 	<div>
 		<section class="relative">
-			<img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/aurora-sky.png" role="presentation" alt="aurora" />
+			<img src={assetBaseUrl + "/aurora-sky.png"} role="presentation" alt="aurora" />
 			<div class="absolute bottom-0 right-0 p-4 text-xs text-[#FC0] sm:p-6 sm:text-sm">
 				"In creative flow I truly am with the UNIVERSE" Jana Vizdal
 			</div>
 		</section>
 		<div class="mx-auto sm:w-full md:w-[700px] lg:w-[900px]">
 			<nav class="items-center sm:px-2 pb-2 md:flex md:justify-between md:pb-4">
-				<img class="mx-auto md:mx-0" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/Logo.png" alt="logo" width="299px" height="83px" />
+				<img class="mx-auto md:mx-0" src={assetBaseUrl + "/Logo.png"} alt="logo" width="299px" height="83px" />
 				<ul class="flex justify-center gap-2 items-center">
 					<li>
 						<a href="/">Home</a>
@@ -48,7 +49,7 @@
 								aria-haspopup="true"
 								onclick={() => (showNavigation = !showNavigation)}
 							>
-								Gallery
+								Pages
 								<svg
 									class="-mr-1 h-5 w-5 text-gray-400"
 									viewBox="0 0 20 20"
@@ -79,6 +80,7 @@
 									aria-labelledby="menu-button"
 								>
 									<div class="py-1 z-10" role="none">
+										<Link href="/gallery" label="Gallery" />
 										<Link href="/design" label="Design" />
 										<Link href="/sale" label="For Sale" />
 										<Link href="/projects" label="Projects" />
@@ -108,6 +110,6 @@
 		class="mt-8 bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
 	>
 		<p>Site by Artesgo © 2024. All rights reserved.</p>
-		<img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/aurora-reflected.png" role="presentation" alt="reflected" class="aurora" />
+		<img src={assetBaseUrl + "/aurora-reflected.png"} role="presentation" alt="reflected" class="aurora" />
 	</footer>
 </div>

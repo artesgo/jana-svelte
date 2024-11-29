@@ -1,9 +1,13 @@
+<script>
+	import { assetBaseUrl } from "$lib/image";
+</script>
+
 <h1>Debutant</h1>
 <div class="flex flex-col md:flex-row gap-4">
   <div class="mx-auto">
     
-    <img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/debutant.jpg" alt="debutant" width="259px" height="194px" />
-    <audio style="width: 259px" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/Moonlight-SonataPiano-Sonata-No.-14-in-C-sharp-minor-_Quasi-una-fantasia_.mp3" controls autoplay></audio>
+    <img src={assetBaseUrl + "/debutant.jpg"} alt="debutant" width="259px" height="194px" />
+    <audio style="width: 259px" src={assetBaseUrl + "/Moonlight-SonataPiano-Sonata-No.-14-in-C-sharp-minor-_Quasi-una-fantasia_.mp3"} controls autoplay></audio>
   </div>
   
   <div class="poetry">

@@ -1,8 +1,12 @@
+<script>
+	import { assetBaseUrl } from "$lib/image";
+</script>
+
 <h1>Flowers</h1>
 <div class="flex flex-col md:flex-row gap-4">
   <div class="mx-auto">
-    <img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/chrysanthemum.jpg" alt="debutant" width="300px" height="194px" />
-    <audio style="width: 300px" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/Beethoven-Bagatelle-no.-25-in-A-minor-WoO-59-Fur-Elise.mp3" controls autoplay></audio>
+    <img src={assetBaseUrl + "/chrysanthemum.jpg"} alt="debutant" width="300px" height="194px" />
+    <audio style="width: 300px" src={assetBaseUrl + "/Beethoven-Bagatelle-no.-25-in-A-minor-WoO-59-Fur-Elise.mp3"} controls autoplay></audio>
   </div>
   <div class="poetry">
     <p>In the garden</p>

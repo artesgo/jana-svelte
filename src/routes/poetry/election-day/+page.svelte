@@ -1,7 +1,11 @@
+<script>
+	import { assetBaseUrl } from "$lib/image";
+</script>
+
 <h1>Election Day</h1>
 <div class="flex flex-col md:flex-row gap-4 items-start">
   <div class="mx-auto">
-    <img src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/FlagClimbers.jpg" alt="debutant" width="300px" height="237px" />
+    <img src={assetBaseUrl + "/FlagClimbers.jpg"} alt="debutant" width="300px" height="237px" />
   </div>
 	<div class="poetry">
     <p>The excitement builds –  all candidates have</p>

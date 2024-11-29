@@ -1,7 +1,11 @@
+<script>
+	import { assetBaseUrl } from "$lib/image";
+</script>
+
 <h1>Coming to my Homeland</h1>
 <div class="flex flex-col md:flex-row gap-4">
   <div class="mx-auto">
-    <audio style="width: 259px" src="https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/Vlast-Moldau-City-of-Prague-Philharmonic-Orchestra.mp3" controls autoplay></audio>
+    <audio style="width: 259px" src={assetBaseUrl + "/Vlast-Moldau-City-of-Prague-Philharmonic-Orchestra.mp3"} controls autoplay></audio>
   </div>
   <div class="poetry flex flex-col md:flex-row">
     <div>

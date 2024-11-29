@@ -1,0 +1,1 @@
+export const assetBaseUrl = 'https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/'
