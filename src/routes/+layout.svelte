@@ -80,9 +80,9 @@
 									aria-labelledby="menu-button"
 								>
 									<div class="py-1 z-10" role="none">
-										<Link href="/gallery" label="Gallery" />
-										<Link href="/design" label="Design" />
-										<Link href="/sale" label="For Sale" />
+										<Link href="/gallery/paintings" label="Gallery" />
+										<!-- <Link href="/design" label="Design" /> -->
+										<!-- <Link href="/sale" label="For Sale" /> -->
 										<Link href="/projects" label="Projects" />
 										<Link href="/poetry" label="Poetry" />
 										<Link href="/music" label="Music" />

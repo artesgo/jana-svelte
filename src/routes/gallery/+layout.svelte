@@ -9,6 +9,8 @@
 		<ul class="flex flex-wrap gap-6 text-sm p-4">
 			<li><Link href="/gallery/paintings" label="Paintings" /></li>
 			<li><Link href="/gallery/murals" label="Murals" /></li>
+			<li><Link href="/gallery/sculptures" label="Sculptures" /></li>
+			<li><Link href="/gallery/furniture" label="Furniture" /></li>
 		</ul>
 	</nav>
 
