@@ -23,19 +23,30 @@
 
 <div
 	class={themeFacade().theme +
-		' flex min-h-screen flex-col items-center justify-between bg-white text-black transition-colors duration-1000 dark:bg-black dark:text-white'}
+		' mx-auto bg-white text-black transition-colors duration-1000 dark:bg-black dark:text-white'}
 >
-	<div>
-		<section class="relative">
-			<img src={assetBaseUrl + "/aurora-sky.png"} role="presentation" alt="aurora" />
-			<div class="absolute bottom-0 right-0 p-4 text-xs text-[#FC0] sm:p-6 sm:text-sm">
-				"In creative flow I truly am with the UNIVERSE" Jana Vizdal
-			</div>
-		</section>
-		<div class="mx-auto sm:w-full md:w-[700px] lg:w-[900px]">
-			<nav class="items-center sm:px-2 pb-2 md:flex md:justify-between md:pb-4">
-				<img class="mx-auto md:mx-0" src={assetBaseUrl + "/Logo.png"} alt="logo" width="299px" height="83px" />
-				<ul class="flex justify-center gap-2 items-center">
+	<div class="mx-auto flex justify-between min-h-screen flex-col sm:w-full md:w-[700px] lg:w-[900px]">
+		<div class="container-main">
+			<section class="mb-2">
+				<img
+					class="w-full"
+					src={assetBaseUrl + '/aurora-sky.png'}
+					role="presentation"
+					alt="aurora"
+				/>
+				<div class="mt-[-50px] p-4 text-right text-xs text-[#FC0] sm:p-6 sm:text-sm">
+					"In creative flow I truly am with the UNIVERSE" Jana Vizdal
+				</div>
+			</section>
+			<nav class="items-center pb-2 sm:px-2 md:flex md:justify-between md:pb-4">
+				<img
+					class="mx-auto md:mx-0"
+					src={assetBaseUrl + '/Logo.png'}
+					alt="logo"
+					width="299px"
+					height="83px"
+				/>
+				<ul class="flex items-center justify-center gap-2">
 					<li>
 						<a href="/">Home</a>
 					</li>
@@ -43,7 +54,7 @@
 						<div class="relative inline-block text-left">
 							<button
 								type="button"
-								class="inline-flex w-full justify-center gap-x-1.5 rounded-md dark:bg-slate-800 bg-slate-300 px-3 py-2 text-sm font-semibold dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset"
+								class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-slate-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset dark:bg-slate-800 dark:text-gray-100"
 								id="menu-button"
 								aria-expanded="true"
 								aria-haspopup="true"
@@ -66,31 +77,31 @@
 							</button>
 
 							{#if showNavigation}
-							<div class="relative">
-								<button
-									class="fixed min-h-full w-screen bg-black/50 top-0 left-0 z-0"
-									onclick={() => (showNavigation = false)}
-								>
-									<div class="sr-only">Close</div>
-								</button>
-								<div
-									class="absolute right-0 left-0 fit-content z-10 mt-2 text-center origin-top-right rounded-md dark:bg-slate-900 bg-slate-200 shadow-lg ring-2 focus:outline-none"
-									role="menu"
-									aria-orientation="vertical"
-									aria-labelledby="menu-button"
-								>
-									<div class="py-1 z-10" role="none">
-										<Link href="/gallery/paintings" label="Gallery" />
-										<!-- <Link href="/design" label="Design" /> -->
-										<!-- <Link href="/sale" label="For Sale" /> -->
-										<Link href="/projects" label="Projects" />
-										<Link href="/poetry" label="Poetry" />
-										<Link href="/music" label="Music" />
-										<Link href="/about" label="About" />
-										<Link href="/contact" label="Contact" />
+								<div class="relative">
+									<button
+										class="fixed left-0 top-0 z-0 min-h-full w-screen bg-black/50"
+										onclick={() => (showNavigation = false)}
+									>
+										<div class="sr-only">Close</div>
+									</button>
+									<div
+										class="fit-content absolute left-0 right-0 z-10 mt-2 origin-top-right rounded-md bg-slate-200 text-center shadow-lg ring-2 focus:outline-none dark:bg-slate-900"
+										role="menu"
+										aria-orientation="vertical"
+										aria-labelledby="menu-button"
+									>
+										<div class="z-10 py-1" role="none">
+											<Link href="/gallery/paintings" label="Gallery" />
+											<!-- <Link href="/design" label="Design" /> -->
+											<!-- <Link href="/sale" label="For Sale" /> -->
+											<Link href="/projects" label="Projects" />
+											<Link href="/poetry" label="Poetry" />
+											<Link href="/music" label="Music" />
+											<Link href="/about" label="About" />
+											<Link href="/contact" label="Contact" />
+										</div>
 									</div>
 								</div>
-							</div>
 							{/if}
 						</div>
 					</li>
@@ -105,11 +116,16 @@
 				</section>
 			</main>
 		</div>
+		<footer
+			class="mt-8 self-end bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
+		>
+			<p>Site by Artesgo © 2024. All rights reserved.</p>
+			<img
+				src={assetBaseUrl + '/aurora-reflected.png'}
+				role="presentation"
+				alt="reflected"
+				class="aurora"
+			/>
+		</footer>
 	</div>
-	<footer
-		class="mt-8 bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
-	>
-		<p>Site by Artesgo © 2024. All rights reserved.</p>
-		<img src={assetBaseUrl + "/aurora-reflected.png"} role="presentation" alt="reflected" class="aurora" />
-	</footer>
 </div>
