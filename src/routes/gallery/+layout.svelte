@@ -11,6 +11,8 @@
 			<li><Link href="/gallery/murals" label="Murals" /></li>
 			<li><Link href="/gallery/sculptures" label="Sculptures" /></li>
 			<li><Link href="/gallery/furniture" label="Furniture" /></li>
+			<li><Link href="/gallery/window" label="Window Murals" /></li>
+			<li><Link href="/gallery/landscape" label="Garden and Landscape" /></li>
 		</ul>
 	</nav>
 
