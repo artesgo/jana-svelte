@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 	import { onMount } from 'svelte';
 	import { PUBLIC_KEE, PUBLIC_ID, PUBLIC_TEMPLATE } from '$env/static/public';
 	import { send, init } from '@emailjs/browser';
-	import { themeFacade } from '$lib';
+	import { themeFacade, nameFacade } from '$lib';
+	import { goto } from '$app/navigation';
 
 	let email = $state('');
 	let name = $state('');
@@ -29,7 +29,17 @@
 		const response = await send(PUBLIC_ID, PUBLIC_TEMPLATE, emailRequest, {
 			publicKey: PUBLIC_KEE
 		});
+
+		if (response.status === 200) {
+			goto('/received');
+		} else {
+			goto('/oops');
+		}
 	}
+
+	$effect(() => {
+		nameFacade().setname(name);
+	});
 </script>
 
 <form class={themeFacade().theme}>
