@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { scale } from 'svelte/transition';
-
+	import { pathFacade } from './full.svelte';
+	const facade = pathFacade();
 	let {
 		images,
 		link = false,
@@ -42,7 +43,7 @@
 		<div class={'flex w-1/2 flex-col gap-2'} transition:scale>
 			{#each col as item}
 				{#if link}
-					<a href={item}><img src={item} alt="" /></a>
+					<a href="/gallery/full" onclick={() => (facade.path = item)}><img src={item} alt="" /></a>
 				{:else}
 					<img src={item} alt="" />
 				{/if}

@@ -17,4 +17,4 @@
 
 <h1>Gallery</h1>
 
-<Gallery {images} link={false} cols={3} controls={false} />
+<Gallery {images} link={true} cols={3} controls={false} />
