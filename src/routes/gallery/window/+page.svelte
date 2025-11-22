@@ -38,7 +38,8 @@
 		'signal-2025-11-15-151633_029.jpeg',
 		'signal-2025-11-15-151633_030.jpeg',
 		'signal-2025-11-15-151633_031.jpeg',
-		'signal-2025-11-15-151633_032.jpeg'
+		'signal-2025-11-15-151633_032.jpeg',
+		'signal-2025-11-21-213326_033.jpeg'
 	]);
 	const path = dev ? 'http://localhost:5173' : assetBaseUrl;
 	const images = $derived(paintings.map((image) => path + '/window/' + image));
