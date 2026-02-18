@@ -1,17 +1,19 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
+	import type { GalleryItem } from '$lib/gallary.svelte';
+	import { assetBaseUrl } from '$lib/image';
 	import { onMount } from 'svelte';
 	import { scale } from 'svelte/transition';
-	import { pathFacade } from './full.svelte';
-	const facade = pathFacade();
+	// const facade = pathFacade();
 	let {
 		images,
 		link = false,
 		cols = 3,
 		controls = false
-	}: { images: string[]; link: boolean; cols: number; controls: boolean } = $props();
+	}: { images: GalleryItem[]; link: boolean; cols: number; controls: boolean } = $props();
 	const imagesDividedByCols = $derived(splitArrayIntoCols(images));
 
-	function splitArrayIntoCols(list: string[]) {
+	function splitArrayIntoCols(list: GalleryItem[]) {
 		const _cols = Math.min(list.length, cols);
 		const length = Math.ceil(list.length / _cols);
 		const result = [];
@@ -28,6 +30,8 @@
 	$effect(() => {
 		localStorage.setItem('cols', cols.toString());
 	});
+
+	const path = dev ? 'http://localhost:5173' : assetBaseUrl;
 </script>
 
 {#if controls}
@@ -43,9 +47,11 @@
 		<div class={'flex w-1/2 flex-col gap-2'} transition:scale>
 			{#each col as item}
 				{#if link}
-					<a href="/gallery/full" onclick={() => (facade.path = item)}><img src={item} alt="" /></a>
+					<a href="/gallery/full/{item.short}">
+						<img src={path + '/' + item.category + '/' + item.path} alt="" />
+					</a>
 				{:else}
-					<img src={item} alt="" />
+					<img src={path + '/' + item.category + '/' + item.path} alt="" />
 				{/if}
 			{/each}
 		</div>
