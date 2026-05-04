@@ -303,18 +303,6 @@ export const gallery: GalleryItem[] = [
 	},
 	{
 		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_013.jpeg',
-		short: 'aquarelle_013',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_014.jpeg',
-		short: 'aquarelle_014',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
 		path: 'aquarelle-2026-05-03-215047_015.jpeg',
 		short: 'aquarelle_015',
 		title: 'Studies in nudes'
