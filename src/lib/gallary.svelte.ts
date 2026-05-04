@@ -2,6 +2,7 @@ export interface GalleryItem {
 	category: string;
 	path: string;
 	short: string;
+	title?: string;
 }
 
 export const gallery: GalleryItem[] = [
@@ -35,6 +36,8 @@ export const gallery: GalleryItem[] = [
 	{ category: 'landscape', path: '2024-12-01-231255_008.jpeg', short: '231255_008' },
 	{ category: 'landscape', path: '2024-12-01-231255_009.jpeg', short: '231255_009' },
 	{ category: 'landscape', path: '2024-12-01-231255_011.jpeg', short: '231255_011' },
+	{ category: 'murals', path: 'mural-2026-05-03-215047_002.jpeg', short: 'mural' },
+	{ category: 'murals', path: "Trump_l'oley.jpeg", short: "Trump_l'oley", title: "Trump l'oley" },
 	{
 		category: 'murals',
 		path: '95722005_2900022650033921_5526897202212896768_n.jpg',
@@ -66,6 +69,18 @@ export const gallery: GalleryItem[] = [
 		short: '449389290'
 	},
 	{ category: 'murals', path: '2024-12-01-231255_010.jpeg', short: '231255_010' },
+	{
+		category: 'paintings',
+		path: 'Celebration.jpeg',
+		short: 'Celebration',
+		title: 'Celebration'
+	},
+	{
+		category: 'paintings',
+		path: 'Flower_of_life_pain_and_love.jpeg',
+		short: 'Flower_of_life_pain_and_love',
+		title: 'Flower of Life, Pain and Love'
+	},
 	{
 		category: 'paintings',
 		path: '96286438_2900072550028931_5636417330662604800_n.jpg',
@@ -237,5 +252,89 @@ export const gallery: GalleryItem[] = [
 	{ category: 'window', path: 'signal-2025-11-15-151633_030.jpeg', short: '151633_030' },
 	{ category: 'window', path: 'signal-2025-11-15-151633_031.jpeg', short: '151633_031' },
 	{ category: 'window', path: 'signal-2025-11-15-151633_032.jpeg', short: '151633_032' },
-	{ category: 'window', path: 'signal-2025-11-21-213326_033.jpeg', short: '213326_033' }
+	{ category: 'window', path: 'signal-2025-11-21-213326_033.jpeg', short: '213326_033' },
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_005.jpeg',
+		short: 'aquarelle_005',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_006.jpeg',
+		short: 'aquarelle_006',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_007.jpeg',
+		short: 'aquarelle_007',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_008.jpeg',
+		short: 'aquarelle_008',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_009.jpeg',
+		short: 'aquarelle_009',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_010.jpeg',
+		short: 'aquarelle_010',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_011.jpeg',
+		short: 'aquarelle_011',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_012.jpeg',
+		short: 'aquarelle_012',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_013.jpeg',
+		short: 'aquarelle_013',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_014.jpeg',
+		short: 'aquarelle_014',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_015.jpeg',
+		short: 'aquarelle_015',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_016.jpeg',
+		short: 'aquarelle_016',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_017.jpeg',
+		short: 'aquarelle_017',
+		title: 'Studies in nudes'
+	},
+	{
+		category: 'aquarelles',
+		path: 'aquarelle-2026-05-03-215047_018.jpeg',
+		short: 'aquarelle_018',
+		title: 'Studies in nudes'
+	}
 ];
