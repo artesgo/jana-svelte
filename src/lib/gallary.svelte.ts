@@ -1,3 +1,7 @@
+import { aquarelles } from './_aquarelles';
+import { squarely } from './_squarely';
+import { windows } from './_window';
+
 export interface GalleryItem {
 	category: string;
 	path: string;
@@ -36,6 +40,37 @@ export const gallery: GalleryItem[] = [
 	{ category: 'landscape', path: '2024-12-01-231255_008.jpeg', short: '231255_008' },
 	{ category: 'landscape', path: '2024-12-01-231255_009.jpeg', short: '231255_009' },
 	{ category: 'landscape', path: '2024-12-01-231255_011.jpeg', short: '231255_011' },
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_004.jpeg',
+		short: 'signal-2026-05-08-200740_004'
+	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_005.jpeg',
+		short: 'signal-2026-05-08-200740_005'
+	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_007.jpeg',
+		short: 'signal-2026-05-08-200740_007'
+	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_009.jpeg',
+		short: 'signal-2026-05-08-200740_009'
+	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_010.jpeg',
+		short: 'signal-2026-05-08-200740_010'
+	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-08-200740_011.jpeg',
+		short: 'signal-2026-05-08-200740_011'
+	},
+
 	{ category: 'murals', path: 'mural-2026-05-03-215047_002.jpeg', short: 'mural' },
 	{ category: 'murals', path: "Trump_l'oley.jpeg", short: "Trump_l'oley", title: "Trump l'oley" },
 	{
@@ -183,6 +218,12 @@ export const gallery: GalleryItem[] = [
 	},
 	{ category: 'paintings', path: '2024-12-01-231255_002.jpeg', short: '231255_002' },
 	{
+		category: 'paintings',
+		path: '	signal-2026-05-08-200740.jpeg',
+		short: '200740',
+		title: 'Dutch Style hand painted tiles'
+	},
+	{
 		category: 'sculptures',
 		path: '449294915_7798686666834137_7799047040659639234_n.jpg',
 		short: '449294915'
@@ -217,112 +258,19 @@ export const gallery: GalleryItem[] = [
 		path: '449720607_7798686646834139_4524109893269680871_n.jpg',
 		short: '449720607'
 	},
-	{ category: 'window', path: 'abundance.jpeg', short: 'abundance' },
-	{ category: 'window', path: 'blossom.jpeg', short: 'blossom' },
-	{ category: 'window', path: 'on the lake.jpeg', short: 'on_the_lake' },
-	{ category: 'window', path: 'ranch.jpeg', short: 'ranch' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_001.jpeg', short: '151633_001' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_002.jpeg', short: '151633_002' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_003.jpeg', short: '151633_003' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_004.jpeg', short: '151633_004' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_005.jpeg', short: '151633_005' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_006.jpeg', short: '151633_006' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_007.jpeg', short: '151633_007' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_008.jpeg', short: '151633_008' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_009.jpeg', short: '151633_009' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_011.jpeg', short: '151633_011' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_012.jpeg', short: '151633_012' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_013.jpeg', short: '151633_013' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_014.jpeg', short: '151633_014' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_015.jpeg', short: '151633_015' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_016.jpeg', short: '151633_016' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_017.jpeg', short: '151633_017' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_018.jpeg', short: '151633_018' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_019.jpeg', short: '151633_019' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_020.jpeg', short: '151633_020' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_021.jpeg', short: '151633_021' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_022.jpeg', short: '151633_022' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_023.jpeg', short: '151633_023' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_024.jpeg', short: '151633_024' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_025.jpeg', short: '151633_025' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_026.jpeg', short: '151633_026' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_027.jpeg', short: '151633_027' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_028.jpeg', short: '151633_028' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_029.jpeg', short: '151633_029' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_030.jpeg', short: '151633_030' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_031.jpeg', short: '151633_031' },
-	{ category: 'window', path: 'signal-2025-11-15-151633_032.jpeg', short: '151633_032' },
-	{ category: 'window', path: 'signal-2025-11-21-213326_033.jpeg', short: '213326_033' },
 	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_005.jpeg',
-		short: 'aquarelle_005',
-		title: 'Studies in nudes'
+		category: 'sculptures',
+		path: 'signal-2026-05-08-200740_002.jpeg',
+		short: '200740_002',
+		title: 'Iron work, Forging'
 	},
 	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_006.jpeg',
-		short: 'aquarelle_006',
-		title: 'Studies in nudes'
+		category: 'sculptures',
+		path: '	signal-2026-05-08-200740_003.jpeg',
+		short: '200740_003',
+		title: 'Live Sculpting, Victoria BC provincial museum'
 	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_007.jpeg',
-		short: 'aquarelle_007',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_008.jpeg',
-		short: 'aquarelle_008',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_009.jpeg',
-		short: 'aquarelle_009',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_010.jpeg',
-		short: 'aquarelle_010',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_011.jpeg',
-		short: 'aquarelle_011',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_012.jpeg',
-		short: 'aquarelle_012',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_015.jpeg',
-		short: 'aquarelle_015',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_016.jpeg',
-		short: 'aquarelle_016',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_017.jpeg',
-		short: 'aquarelle_017',
-		title: 'Studies in nudes'
-	},
-	{
-		category: 'aquarelles',
-		path: 'aquarelle-2026-05-03-215047_018.jpeg',
-		short: 'aquarelle_018',
-		title: 'Studies in nudes'
-	}
+	...windows,
+	...aquarelles,
+	...squarely
 ];
