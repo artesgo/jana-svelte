@@ -1,4 +1,5 @@
 import { aquarelles } from './_aquarelles';
+import { furniture } from './_furniture';
 import { murals } from './_murals';
 import { squarely } from './_squarely';
 import { windows } from './_window';
@@ -10,33 +11,8 @@ export interface GalleryItem {
 	title?: string;
 	url?: string;
 }
-
+// https://ibb.co/bfW3RWG
 export const gallery: GalleryItem[] = [
-	{
-		category: 'furniture',
-		path: '449436259_7798686076834196_5999431338271248670_n.jpg',
-		short: '449436259'
-	},
-	{
-		category: 'furniture',
-		path: '449487023_7798686070167530_2685129615667842491_n.jpg',
-		short: '449487023'
-	},
-	{
-		category: 'furniture',
-		path: '449653281_7798686060167531_8616791023003179067_n.jpg',
-		short: '449653281'
-	},
-	{
-		category: 'furniture',
-		path: '449708041_7798686080167529_5956719425143570085_n.jpg',
-		short: '449708041'
-	},
-	{
-		category: 'furniture',
-		path: '449726853_7798686056834198_866279041002162164_n.jpg',
-		short: '449726853'
-	},
 	{ category: 'landscape', path: '2024-12-01-231255_004.jpeg', short: '231255_004' },
 	{ category: 'landscape', path: '2024-12-01-231255_005.jpeg', short: '231255_005' },
 	{ category: 'landscape', path: '2024-12-01-231255_008.jpeg', short: '231255_008' },
@@ -246,5 +222,6 @@ export const gallery: GalleryItem[] = [
 	...windows,
 	...aquarelles,
 	...squarely,
-	...murals
+	...murals,
+	...furniture
 ];
