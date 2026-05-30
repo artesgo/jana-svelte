@@ -7,7 +7,7 @@
 	const params = $derived(data.slug);
 	const path = dev ? 'http://localhost:5173' : assetBaseUrl;
 	const image = $derived(gallery.find((item) => item.short === params));
-	const imageUrl = $derived(path + '/' + image?.category + '/' + image?.path);
+	const imageUrl = $derived(image?.url || path + '/' + image?.category + '/' + image?.path);
 	const imageTitle = $derived(image?.title);
 </script>
 

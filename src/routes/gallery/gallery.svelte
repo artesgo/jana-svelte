@@ -48,10 +48,10 @@
 			{#each col as item}
 				{#if link}
 					<a href="/gallery/full/{item.short}">
-						<img src={path + '/' + item.category + '/' + item.path} alt="" />
+						<img src={item.url || path + '/' + item.category + '/' + item.path} alt="" />
 					</a>
 				{:else}
-					<img src={path + '/' + item.category + '/' + item.path} alt="" />
+					<img src={item.url || path + '/' + item.category + '/' + item.path} alt="" />
 				{/if}
 			{/each}
 		</div>
