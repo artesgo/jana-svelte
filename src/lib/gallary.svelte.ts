@@ -70,6 +70,11 @@ export const gallery: GalleryItem[] = [
 		path: 'signal-2026-05-08-200740_011.jpeg',
 		short: 'signal-2026-05-08-200740_011'
 	},
+	{
+		category: 'landscape',
+		path: 'signal-2026-05-29-201922.jpeg',
+		short: 'signal-2026-05-29-201922'
+	},
 
 	{ category: 'murals', path: 'mural-2026-05-03-215047_002.jpeg', short: 'mural' },
 	{ category: 'murals', path: "Trump_l'oley.jpeg", short: "Trump_l'oley", title: "Trump l'oley" },
