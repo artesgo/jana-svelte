@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<section class="dark:bg-slate-800 bg-slate-100 rounded-md">
+<section>
 	<nav>
 		<ul class="flex flex-wrap gap-6 text-sm p-4">
 			<li><Link href="/poetry/feet" label="Feet of the Homeless" /></li>

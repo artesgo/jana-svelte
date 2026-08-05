@@ -4,6 +4,6 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<div class="dark:bg-slate-900 bg-slate-200 p-4 rounded-md">
+<div class="backdrop-blur bg-slate-900/75 p-4 border border-cyan-800 rounded-md">
   {@render children()}
 </div>

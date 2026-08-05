@@ -1,11 +1,11 @@
 <script lang="ts">
-	import '../app.css';
 	import { browser } from '$app/environment';
-	import { themeFacade } from '$lib';
-	import Link from './link.svelte';
-	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
+	import { themeFacade } from '$lib';
 	import { assetBaseUrl } from '$lib/image';
+	import { onMount } from 'svelte';
+	import '../app.css';
+	import Link from './link.svelte';
 
 	let { children } = $props();
 	let showNavigation = $state(false);
@@ -19,21 +19,14 @@
 	afterNavigate(() => {
 		showNavigation = false;
 	});
+
+	const year = new Date().getFullYear();
 </script>
 
-<div
-	class={themeFacade().theme +
-		' mx-auto bg-white text-black transition-colors duration-1000 dark:bg-black dark:text-white'}
->
+<div id="app">
 	<div class="mx-auto flex justify-between min-h-screen flex-col sm:w-full md:w-[700px] lg:w-[900px]">
 		<div class="container-main">
 			<section class="mb-2">
-				<img
-					class="w-full"
-					src={assetBaseUrl + '/aurora-sky.png'}
-					role="presentation"
-					alt="aurora"
-				/>
 				<div class="mt-[-50px] p-4 text-right text-xs text-[#FC0] sm:p-6 sm:text-sm">
 					"In creative flow I truly am with the UNIVERSE" Jana Vizdal
 				</div>
@@ -54,7 +47,7 @@
 						<div class="relative inline-block text-left">
 							<button
 								type="button"
-								class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-slate-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset dark:bg-slate-800 dark:text-gray-100"
+								class="inline-flex w-full justify-center border border-cyan-800 rounded-md px-2 py-1 text-sm font-semibold backdrop-blur bg-slate-800/75 text-gray-100"
 								id="menu-button"
 								aria-expanded="true"
 								aria-haspopup="true"
@@ -85,7 +78,7 @@
 										<div class="sr-only">Close</div>
 									</button>
 									<div
-										class="fit-content absolute left-0 right-0 z-10 mt-2 origin-top-right rounded-md bg-slate-200 text-center shadow-lg ring-2 focus:outline-none dark:bg-slate-900"
+										class="fit-content absolute left-0 right-0 z-10 mt-2 origin-top-right border border-cyan-800 rounded-md text-center focus:outline-none backdrop-blur"
 										role="menu"
 										aria-orientation="vertical"
 										aria-labelledby="menu-button"
@@ -105,9 +98,6 @@
 							{/if}
 						</div>
 					</li>
-					<li>
-						<button onclick={themeFacade().toggle}>{themeFacade().theme} mode</button>
-					</li>
 				</ul>
 			</nav>
 			<main class="flex flex-col sm:flex-row md:items-start">
@@ -117,15 +107,24 @@
 			</main>
 		</div>
 		<footer
-			class="mt-8 self-end bg-white text-center text-black transition-all duration-1000 dark:bg-black dark:text-white"
+			class="my-8 px-2 py-1 border border-cyan-800 rounded-md self-end backdrop-blur bg-slate-900/75 text-center transition-all duration-1000 text-white"
 		>
-			<p>Site by Artesgo © 2024. All rights reserved.</p>
-			<img
-				src={assetBaseUrl + '/aurora-reflected.png'}
-				role="presentation"
-				alt="reflected"
-				class="aurora"
-			/>
+			<p>Site by Artesgo © {year}. All rights reserved.</p>
 		</footer>
 	</div>
 </div>
+
+<style>
+	#app {
+		background-image: url('https://i.ibb.co/Ldc4g0kM/serey-kim-v-Ue-Pu7h-AYAQ-unsplash.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: none;
+		color: white;
+	}
+
+	.fit-content {
+		width: fit-content;
+		margin-inline: auto; 
+	}
+</style>

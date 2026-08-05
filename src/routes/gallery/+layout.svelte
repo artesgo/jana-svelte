@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<section class="rounded-md bg-slate-100 dark:bg-slate-800">
+<section>
 	<nav>
 		<ul class="flex flex-wrap gap-6 p-4 text-sm">
 			<li><Link href="/gallery/squarely" label="Squarely Studies" /></li>
