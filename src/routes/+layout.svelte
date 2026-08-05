@@ -107,9 +107,10 @@
 			</main>
 		</div>
 		<footer
-			class="my-8 px-2 py-1 border border-cyan-800 rounded-md self-end backdrop-blur bg-slate-900/75 text-center transition-all duration-1000 text-white"
+			class="my-8 flex justify-between text-white"
 		>
-			<p>Site by Artesgo © {year}. All rights reserved.</p>
+			<p class="px-2 py-1 border border-cyan-800 rounded-md backdrop-blur bg-slate-900/75">Photo by <a href="https://unsplash.com/@shuttergenic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Serey Kim</a> on <a href="https://unsplash.com/photos/aurora-borealis-vUePu7hAYAQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+			<p class="px-2 py-1 border border-cyan-800 rounded-md backdrop-blur bg-slate-900/75">Site by Artesgo © {year}. All rights reserved.</p>
 		</footer>
 	</div>
 </div>
@@ -127,4 +128,6 @@
 		width: fit-content;
 		margin-inline: auto; 
 	}
+
+	
 </style>
