@@ -9,6 +9,7 @@
 	const image = $derived(gallery.find((item) => item.short === params));
 	const imageUrl = $derived(image?.url || path + '/' + image?.category + '/' + image?.path);
 	const imageTitle = $derived(image?.title);
+	const imageDescription = $derived(image?.description);
 </script>
 
 <div class="container">
@@ -16,6 +17,10 @@
 		<h1 class="mb-4 text-center text-2xl font-bold">{imageTitle}</h1>
 	{/if}
 	<img src={imageUrl} alt="" />
+
+	{#if imageDescription}
+		<div class="mt-4 text-center text-sm font-light">{imageDescription}</div>
+	{/if}
 </div>
 
 <style>

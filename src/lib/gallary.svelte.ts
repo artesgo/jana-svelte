@@ -7,6 +7,7 @@ import { windows } from './_window';
 export interface GalleryItem {
 	category: string;
 	short: string;
+	description?: string;
 	path?: string;
 	title?: string;
 	url?: string;

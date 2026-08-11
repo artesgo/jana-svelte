@@ -84,7 +84,7 @@
 										aria-labelledby="menu-button"
 									>
 										<div class="z-10 py-1" role="none">
-											<Link href="/gallery/paintings" label="Gallery" />
+											<Link href="/gallery/full/95722005" label="Gallery" />
 											<!-- <Link href="/design" label="Design" /> -->
 											<!-- <Link href="/sale" label="For Sale" /> -->
 											<Link href="/projects" label="Projects" />

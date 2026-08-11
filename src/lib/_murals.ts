@@ -15,7 +15,8 @@ export const murals: GalleryItem[] = [
 	{
 		category: 'murals',
 		url: 'https://i.ibb.co/6JV2nFH0/95722005-2900022650033921-5526897202212896768-n.jpg',
-		short: '95722005'
+		short: '95722005',
+		description: "The artist symbolically depicted her arrival to Canada with her father. Depicting her children in form of angels, some who were not born yet. She painted this work and met her second husband who she met much later after work was completed. The depiction was completed in the style of Michelangelo, including gold leaf applications and filigree work, hand formed in plaster. The artist spent four years completing the work while raising her small children. Japanese JTB Tour buses came to visit this work, as well as the artist's stone sculptures, and her painting studio."
 	},
 	{
 		category: 'murals',
