@@ -15,10 +15,10 @@
     <p>for the hands of hungry</p>
     <p>for children crying rivers of tears</p>
     <p>my head is spinning</p>
-    <p>searching for a sward to fight the fears</p>
+    <p>searching for a sword to fight the fears</p>
     <p>searching for bowl</p>
     <p>with never ending porridge</p>
-    <p>brake down the wall</p>
+    <p>break down the wall</p>
     <p>with never ending courage</p>
     <p>when rivers are red</p>
     <p>and the streets are muddy</p>

@@ -15,7 +15,7 @@
     <p>in mothers arms</p>
     <p>she watches</p>
     <p>stars dance in her eyes</p>
-    <p>old sole</p>
+    <p>old soul</p>
     <p>they all say</p>
     <p>came here with all the knowledge</p>
     <p>but to watch and live it all</p>

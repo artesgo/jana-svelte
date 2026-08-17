@@ -13,7 +13,7 @@
 		<p>my feelings</p>
 		<p>my anger</p>
 		<p>just me</p>
-		<p>You open your hart to my pain</p>
+		<p>You open your heart to my pain</p>
 		<p>You have nothing to gain</p>
 		<p>They watch us from windows above</p>
 		<p>They don't feel the same love</p>
@@ -26,7 +26,7 @@
 		<p>We are eye sore</p>
 		<p>They say</p>
 		<p>WHAT DOES IT MEAN</p>
-		<p>ON THE END OF THE DAY</p>
+		<p>AT THE END OF THE DAY</p>
 		<p>Without home</p>
 		<p>without food</p>
 		<p>I still share and it feels good</p>

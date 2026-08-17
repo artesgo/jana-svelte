@@ -25,7 +25,7 @@
       <pre>down the platform;</pre>
       <pre>waiting for that </pre>
       <pre>strange dark storm.</pre>
-      <pre>But than I come to my senses, </pre>
+      <pre>But then I come to my senses, </pre>
       <pre>and think of the light which</pre>
       <pre>has been with me always-</pre>
       <pre>bright and white.</pre>
