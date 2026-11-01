@@ -117,7 +117,7 @@
 
 <style>
 	#app {
-		background-image: url('https://i.ibb.co/Ldc4g0kM/serey-kim-v-Ue-Pu7h-AYAQ-unsplash.jpg');
+		background-image: url('https://raw.githubusercontent.com/artesgo/jana-svelte/refs/heads/main/static/serey-kim-v-Ue-Pu7h-AYAQ-unsplash.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: none;

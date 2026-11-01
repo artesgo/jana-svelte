@@ -12,7 +12,6 @@ export interface GalleryItem {
 	title?: string;
 	url?: string;
 }
-// https://ibb.co/bfW3RWG
 export const gallery: GalleryItem[] = [
 	{ category: 'landscape', path: '2024-12-01-231255_004.jpeg', short: '231255_004' },
 	{ category: 'landscape', path: '2024-12-01-231255_005.jpeg', short: '231255_005' },
